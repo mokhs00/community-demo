@@ -1,7 +1,13 @@
-jpa:
-  hibernate:
-    ddl-auto: create
-  properties:
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/community-demo
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
     hibernate:
-      show_sql : true
-      format_sql : true
+      ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
